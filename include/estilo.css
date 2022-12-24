@@ -1,0 +1,266 @@
+<style type="text/css">
+/*
+Style Author: Pablo Gigena
+Author URI: https://gigena.net/
+
+#dea7bb 	(222,167,187)
+#ebd1db 	(235,209,219)
+#efe9f5 	(239,233,245)
+#d9e1f2 	(217,225,242)
+#b9c6e1 	(185,198,225)
+#f5efe9
+*/
+.pinky{
+background-color:#dea7bb;
+border-top:1px solid #b9c6e1;
+}
+.ponky{
+background-color:#ebd1db;
+border:1px solid #b9c6e1;
+}
+.penky{
+background-color:#efe9f5;
+border:1px solid #b9c6e1;
+}
+.blinky{
+background-color:#d9e1f2;
+border:1px solid #dea7bb;
+}
+.blonky{
+background-color:#b9c6e1;
+border:1px solid #dea7bb;
+}
+.blenky{
+background-color:#f5efe9;
+border:1px solid #dea7bb;
+}
+
+.boxAnalitica {
+  padding: 30px 0px;
+  margin:10px;
+  border-radius: 3px;
+  animation: barraanimada 2s ease 0s 1 normal none;
+  }
+.boxAnalitica:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+  @keyframes barraanimada {
+    0% {
+      opacity: 0;
+      transform: rotateY(100deg);
+      transform-origin: left;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotateY(0);
+      transform-origin: left;
+    }
+  }
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+}
+
+.zone {
+padding:10px;
+border-left:1px solid #dea7bb !important;
+margin-bottom: 30px !important;
+}
+
+.suprabarra{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.noSales{
+  color: #413d3d;
+  font-size: medium;
+  padding: 5px;
+  font-weight: 200;
+}
+
+label{
+ color: #2f487e;
+  vertical-align: center;
+  width: auto;
+  font-size: large;
+  font-weight: 700;
+  animation: etiqueta 1s ease-out 0s 1 normal both;
+  padding: 30px 10px;
+}
+@keyframes etiqueta {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.detalle {
+  display: inline-block;
+}
+.masinfo{
+  padding: 20px auto;
+  margin: 20px auto 20px 10px;
+ 
+}
+
+/*Drop Down Details*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 70vw;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.close{
+  background-color: white;
+  color: #413d3d;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family:Arial, Helvetica, sans-serif;
+  border: none;
+  border-top: 1px solid #413d3d;
+  padding: 3px 10px;
+  margin: 5px 10px;
+}
+.cuadro{
+  border: 1 solid rgb(95, 91, 91);
+  padding: 10px;
+  background-color: #ffffff;
+  display: none;
+  animation: cuadrito 0.5s ease-out 0s 1 normal backwards;
+ 
+}
+@keyframes cuadrito {
+	0% {
+		transform: scaleY(0.4);
+		transform-origin: 100% 0%;
+	}
+
+	100% {
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
+	}
+}
+/*tabs*/
+
+/* * {
+    box-sizing: border-box;
+  }
+*/
+  body {
+    font-family: "Open Sans";
+    background: #fff;
+    color: #3b506e;
+    line-height: 1.618em;
+  }
+  .wrapper {
+    max-width:90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #fff;
+    height: auto;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: rgb(219, 239, 253);
+    border-right: 0.125rem solid #c5c0b4;
+    color: rgb(200, 193, 193);
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #2c3e50;
+    
+    opacity: 0;
+    transition: all 0.35s;
+    width: 100%;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #c5c0b4;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+    width: 100%;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+/*Checkout*/
+.minion{
+  animation: banana 1s ease-out 0s 1 normal forwards;
+}
+@keyframes banana {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+</style>

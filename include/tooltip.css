@@ -1,0 +1,84 @@
+/* Tooltip container */
+ 
+ .tooltiptext {
+    position: relative;
+    display: inline-block;
+    /*border: 1px dotted red; /* If you want dots under the hoverable text */
+    min-width: 500px;
+  }
+  /*
+  .tooltip .tooltiptext, .tooltiptext, .tooltiptext p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 12px;
+    line-height: 14px;
+  }
+  */
+  /* Tooltip text 
+  .tooltip .tooltiptext {*/
+    .tooltiptext {
+  
+    visibility:hidden;
+    width: auto;
+    max-width: 30vw;
+    background-color: rgba(247, 244, 223, 0.983);
+    color: rgb(118, 113, 113);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+    min-height: 40px;
+  
+    /* Position the tooltip text*/
+    position: absolute;
+    z-index: 1;
+    /*top: -10px;
+    right:-250px;
+    margin-left: -60px;
+     */
+     margin-top: -20px;
+     margin-left: 10px;
+ 
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    /*Shadow*/
+    -webkit-box-shadow: -8px 8px 15px -3px rgba(14,12,10,0.46); 
+    box-shadow: -8px 8px 15px -3px rgba(14,12,10,0.46);
+  }
+/*  .tooltip .tooltiptext h2,  .tooltip .tooltiptext h3, .tooltip .tooltiptext h4, .tooltip .tooltiptext h5, .tooltip .tooltiptext h6{
+    color: rgb(118, 113, 113);!important;
+  }*/
+
+    .tooltiptext h2,   .tooltiptext h3,  .tooltiptext h4,  .tooltiptext h5,  .tooltiptext h6 {
+    color: rgb(118, 113, 113)!important;
+  }
+  
+  /* Tooltip arrow 
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }*/
+  /* Tooltip arrow / version right*/
+  .tooltiptext::after {
+    content: "◀︎";
+    position: absolute;
+    top: 28px;
+    left: 1px;
+    margin-left: -10px;
+   color: rgba(247, 244, 223, 0.983);
+  } 
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .fragezeichen:hover + .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*font-family: 'Roboto',sans-serif; font-size: 12px; line-height: 14px;*/
