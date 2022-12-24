@@ -6,7 +6,7 @@
 * Description:       macht eine Anpassung des Woocommerce Checkout-Formulars, um Benutzer mit ganz bestimmten Eigenschaften zu registrieren. Mod.
 * mod in Orders list , adding Code and Product name Column.-
 * from 1.2 add section in Dashborad for Blubox Analitica
-* Version:           0.3
+* Version:           1.3
 * Author:            Pablo Gigena
 * Author URI:        https://gigena.net/code
 * 
